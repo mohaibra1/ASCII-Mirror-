@@ -1,0 +1,14 @@
+type: edu
+custom_name: "ASCII Lands welcome you, Stranger!"
+files:
+  - name: src/asciimirror/Main.java
+    visible: true
+    learner_created: false
+  - name: test/MirrorTest.java
+    learner_created: false
+feedback_link: https://hyperskill.org/projects/260/stages/1316/implement#comment
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 15 Mar 2026 16:31:38 UTC"
+record: -1
