@@ -5,10 +5,10 @@ files:
     learner_created: false
   - name: ASCII_Animals/camel.txt
     visible: true
-    learner_created: false
+    learner_created: true
   - name: ASCII_Animals/cow.txt
     visible: true
-    learner_created: false
+    learner_created: true
   - name: test/example1.txt
     learner_created: false
   - name: test/example2.txt
@@ -22,5 +22,8 @@ files:
   - name: test/MirrorTest.java
     learner_created: false
 feedback_link: https://hyperskill.org/projects/260/stages/1318/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 16 Mar 2026 01:36:11 UTC"
 record: -1
