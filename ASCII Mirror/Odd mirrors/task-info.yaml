@@ -4,17 +4,32 @@ files:
     visible: true
     learner_created: false
   - name: test/example1.txt
+    visible: true
     learner_created: false
   - name: test/example2.txt
+    visible: true
     learner_created: false
   - name: test/example3.txt
+    visible: true
     learner_created: false
   - name: test/example4.txt
+    visible: true
     learner_created: false
   - name: test/example5.txt
+    visible: true
     learner_created: false
   - name: test/MirrorTest.java
+    visible: true
     learner_created: false
+  - name: ASCII_Animals/camel.txt
+    visible: true
+    learner_created: true
+  - name: ASCII_Animals/cow.txt
+    visible: true
+    learner_created: true
 feedback_link: https://hyperskill.org/projects/260/stages/1319/implement#comment
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Fri, 20 Mar 2026 22:33:29 UTC"
 record: -1

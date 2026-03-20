@@ -2,42 +2,47 @@ package asciimirror;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.println("Input the file path:");
+        String filePath = input.nextLine();
 
-        String cow  = """
-                                    _______\s
-                                   <  >
-                                    -------\s
-                            ^__^   /       \s
-                    _______/(oo)  /        \s
-                /\\/(       /(__)           \s
-                   | w----||               \s
-                   ||     ||               \s
-                """;
+        File file = new File(filePath);
 
-        String cow1 = """
-                            ^__^
-                    _______/(oo)
-                /\\/(       /(__)
-                   | w----||   \s
-                   ||     ||   \s""";
+        if (!file.exists() || file.isDirectory()) {
+            System.out.println("File not found!");
+            return;
+        }
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("input the file path:");
-        String input = sc.nextLine();
-        File f = new File(input);
+        List<String> lines = new ArrayList<>();
 
-        try(Scanner scanner = new Scanner(f)) {
-            while(scanner.hasNextLine()) {
-                String line = scanner.nextLine();
-                System.out.println(line);
+        try (Scanner fileScanner = new Scanner(file)) {
+            while (fileScanner.hasNextLine()) {
+                lines.add(fileScanner.nextLine());
             }
-        }catch(FileNotFoundException e) {
-            System.out.println("File not found");
+        } catch (FileNotFoundException e) {
+            System.out.println("File not found!");
+            return;
+        }
 
+        // Find the max line length
+        int maxLength = 0;
+        for (String line : lines) {
+            if (line.length() > maxLength) {
+                maxLength = line.length();
+            }
+        }
+
+        for (String line : lines) {
+            String padded = String.format("%-" + maxLength + "s", line);
+            //String mirrored = mirrorReverse(padded);
+            System.out.println(padded + " | " + padded);
         }
     }
+
 }

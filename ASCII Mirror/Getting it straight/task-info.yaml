@@ -4,16 +4,22 @@ files:
     visible: true
     learner_created: false
   - name: test/example1.txt
+    visible: true
     learner_created: false
   - name: test/example2.txt
+    visible: true
     learner_created: false
   - name: test/example3.txt
+    visible: true
     learner_created: false
   - name: test/example4.txt
+    visible: true
     learner_created: false
   - name: test/example5.txt
+    visible: true
     learner_created: false
   - name: test/MirrorTest.java
+    visible: true
     learner_created: false
 feedback_link: https://hyperskill.org/projects/260/stages/1320/implement#comment
 status: Unchecked
